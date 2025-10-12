@@ -35,7 +35,7 @@
             100% { transform: rotate(0deg); }
         }
 
-        button {
+        button, a {
             margin-top: 20px;
             padding: 10px 20px;
             border: none;
@@ -44,9 +44,11 @@
             border-radius: 10px;
             cursor: pointer;
             font-size: 1em;
+            text-decoration: none;
+            display: inline-block;
         }
 
-        button:hover {
+        button:hover, a:hover {
             background-color: #6d4c41;
         }
     </style>
@@ -58,6 +60,8 @@
     <p>Clique no botão para revelar a surpresa!</p>
 
     <button onclick="mostrarMensagem()">Mostrar Mensagem</button>
+
+    <a href="formVendaInternet.html">Ir para o Formulário</a>
 
     <script>
         function mostrarMensagem() {
